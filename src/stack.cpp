@@ -57,10 +57,10 @@ namespace stack
             if (top_index >= 0)
             {
                 std::cout << "Stack elements are: ";
-                for (int i = 0; i <= top_index; i++)
+                for (int i = top_index; i >= 0; i--)
                 {
                     std::cout << stack_array[i];
-                    if (i < size - 1)
+                    if (i > 0)
                     {
                         std::cout << ", ";
                     }
